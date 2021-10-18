@@ -1,0 +1,600 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://conocimiento-en-bits.neocities.org/2021-09-22-ej1-pull-request/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.3">
+    
+    
+      
+        <title>Ejercicio 1: Pull Request - conocimiento-en-bits</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.5143246d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="yellow">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#paso-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="conocimiento-en-bits" class="md-header__button md-logo" aria-label="conocimiento-en-bits" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            conocimiento-en-bits
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ejercicio 1: Pull Request
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="yellow"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="yellow"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="conocimiento-en-bits" class="md-nav__button md-logo" aria-label="conocimiento-en-bits" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    conocimiento-en-bits
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          2asir3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2asir3" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          2asir3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2021-09-22-ej1-playbook-sencillo.md" class="md-nav__link">
+        ej1-playbook-sencillo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        ej1-pull-request
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2021-10-1-ej2-router-nat-vagrant/" class="md-nav__link">
+        ej2-router-nat-vagrant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2021-10-3-ej3-config-escenario-router-nat/" class="md-nav__link">
+        ej3-config-escenario-router-nat
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2021-10-5-implantacion-despliegue-aplicacion-web-estatica/" class="md-nav__link">
+        app-web-estatica
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2021-10-14-ej2-pr-pag-compa%C3%B1ero/" class="md-nav__link">
+        ej2-pr-pag-compañero
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="paso-1">Paso 1</h1>
+<p>Hacemos fork del repositorio https://github.com/josedom24/prueba-pr-asir para tenerlo en nuestra cuenta de Github.</p>
+<h1 id="paso-2">Paso 2</h1>
+<p>Clonamos este repositorio <em>(el repo de nuestra cuenta, no el original)</em> a nuestra máquina</p>
+<pre><code>git clone git@github.com:adriasir123/prueba-pr-asir.git
+</code></pre>
+<h1 id="paso-3">Paso 3</h1>
+<p>Creamos una nueva branch para los cambios</p>
+<pre><code>git checkout -b adrian_jaramillo
+</code></pre>
+<blockquote>
+<p>Github al aceptar Pull Requests fusiona branches, de ahí que tengamos que crear una</p>
+</blockquote>
+<h1 id="paso-4">Paso 4</h1>
+<p>Añadimos un nuevo remote, apuntando al repositorio original.<br />
+Hacemos esto para poder hacer pull desde la versión original del repositorio, y traernos siempre los últimos cambios.</p>
+<pre><code>git remote add upstream https://github.com/josedom24/prueba-pr-asir.git
+</code></pre>
+<blockquote>
+<p>Como curiosidad, <code>git remote show</code> muestra la lista de remotes. Ahora tengo origin y upstream.</p>
+</blockquote>
+<p>Ahora tenemos que hacer lo siguiente para enlazar la branch main de upstream, a mi branch personalizada.</p>
+<pre><code>git branch --set-upstream-to=upstream/main adrian_jaramillo
+</code></pre>
+<p>Después de haber hecho esto, AHORA SÍ puedo hacer pull desde upstream, aunque me aparece el siguiente warning:</p>
+<pre><code>hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint:
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace &quot;git config&quot; with &quot;git config --global&quot; to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+</code></pre>
+<p>A pesar de ser tan intimidante, podemos hacer pull sin problemas.</p>
+<h1 id="paso-5">Paso 5</h1>
+<p>Antes de modificar el repositorio, <strong>tenemos que asegurarnos de que estamos en la última versión del repositorio original</strong>, para no quedarnos atrás en commits y crear conflictos.</p>
+<p>Para ello, hacemos</p>
+<pre><code>atlas@olympus:~/Desktop/iaw/ud1-intro/prueba-pr-asir$ git status
+On branch adrian_jaramillo
+Your branch is up to date with 'upstream/main'.
+</code></pre>
+<p>En el caso de habernos quedado atrás en commits, haríamos</p>
+<pre><code>git pull
+</code></pre>
+<h1 id="paso-6">Paso 6</h1>
+<p>En el paso anterior, nos hemos asegurado de estar en la última versión del repositorio.</p>
+<p>Procedemos a hacer los siguientes cambios...</p>
+<h2 id="cambio-1">Cambio 1</h2>
+<p>Modifico README.md para añadir un enlace a la lista, con mis iniciales "ajr" y apuntando al fichero que crearé en el directorio files</p>
+<pre><code>**¿Qué asignatura te gusta más? Y ¿por qué?**
+
+* [jdmr](files/jdmr.md)
+* [ada](files/ada.md)
+* [lpt](files/lpt.md)
+* [cmgpdg](files/cmgpdg.md)
+* [dpg](files/dpg.md)
+* [dpg2](files/dpg2.md)
+* [oeb](files/oeb.md)
+* [ajr](files/ajr.md)
+
+</code></pre>
+<p>Al final de esa lista, vemos mi línea añadida.</p>
+<h2 id="cambio-2">Cambio 2</h2>
+<p>Creo el fichero files/ajr.md</p>
+<pre><code>atlas@olympus:~/Desktop/iaw/ud1-intro/prueba-pr-asir/files$ ls -la
+total 40
+drwxr-xr-x 2 atlas atlas 4096 Sep 23 06:50 .
+drwxr-xr-x 4 atlas atlas 4096 Sep 23 06:41 ..
+-rw-r--r-- 1 atlas atlas  418 Sep 22 13:44 ada.md
+-rw-r--r-- 1 atlas atlas  400 Sep 23 06:50 ajr.md
+-rw-r--r-- 1 atlas atlas  119 Sep 22 14:16 cmgpdg.md
+-rw-r--r-- 1 atlas atlas  313 Sep 22 14:16 dpg.md
+-rw-r--r-- 1 atlas atlas  166 Sep 22 13:44 jdmr.md
+-rw-r--r-- 1 atlas atlas 1024 Sep 22 14:16 .jdmr.md.swp
+-rw-r--r-- 1 atlas atlas  265 Sep 22 14:16 lpt.md
+-rw-r--r-- 1 atlas atlas  115 Sep 22 14:28 oeb.md
+</code></pre>
+<p>Lo vemos en la segunda fila, y su contenido es el siguiente</p>
+<pre><code># ¿Qué asignatura te gusta más?
+
+Sinceramente nunca tuve una asignatura preferida, me gusta aprender en general.  
+Pero si tengo que elegir, siempre me inclino más por cualquier tema relacionado con sysadmin:
+- **Sistemas operativos**
+- **Redes**
+- **¡¡VIRTUALIZACIÓN!!**
+
+## ¿Por qué?
+
+*¿Necesitamos un por qué para dar una explicación lógica a nuestros gustos? ;)*
+
+&gt; Quote de ejemplo
+</code></pre>
+<h1 id="paso-7">Paso 7</h1>
+<p>Añadimos nuestros cambios para el siguiente commit</p>
+<pre><code>git add .
+</code></pre>
+<blockquote>
+<p>Este comando añade <strong>TODOS los cambios del repositorio</strong> al siguiente commit</p>
+</blockquote>
+<p>Hacemos el commit, con un mensaje significativo</p>
+<pre><code>git commit -m &quot;Modificaciones de AJR&quot;
+</code></pre>
+<p>Hacemos push a <strong>nuestro repo</strong></p>
+<pre><code>git push origin
+</code></pre>
+<h1 id="paso-8">Paso 8</h1>
+<p>Después del push, tendremos en github el botón "Compare &amp; Pull Request"</p>
+<p><img alt="" src="https://i.postimg.cc/PJ7dC3YC/Screenshot-from-2021-09-23-08-25-58.png" /></p>
+<p>Aquí muestro el pull request</p>
+<p><img alt="" src="https://i.postimg.cc/7PtHt6dq/Screenshot-from-2021-09-23-08-36-21.png" /></p>
+<p>¿Lo siguiente? Esperar a que el dueño del repositorio acepte los cambios.</p>
+<h1 id="paso-9">Paso 9</h1>
+<p>Para finalizar este ejercicio, mi repositorio se debe actualizar con todos los cambios posteriores que mis compañeros hagan</p>
+<pre><code>git pull
+git push origin
+</code></pre>
+<p>URL a mi repositorio: https://github.com/adriasir123/prueba-pr-asir/tree/adrian_jaramillo</p>
+                
+                  
+                
+              
+              
+                
+
+
+  <h2 id="__comments">Comments</h2>
+  <div id="disqus_thread"></div>
+  <script>var script,disqus_config=function(){this.page.url="https://conocimiento-en-bits.neocities.org/2021-09-22-ej1-pull-request/",this.page.identifier="2021-09-22-ej1-pull-request/"};"undefined"==typeof DISQUS?((script=document.createElement("script")).async=!0,script.src="https://conocimiento-en-bits-neocities-org.disqus.com/embed.js",script.setAttribute("data-timestamp",Date.now()),document.body.appendChild(script)):DISQUS.reset({reload:!0,config:disqus_config})</script>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../2021-10-1-ej2-router-nat-vagrant/" class="md-footer__link md-footer__link--next" aria-label="Next: ej2-router-nat-vagrant" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              ej2-router-nat-vagrant
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f89c2efe.min.js"></script>
+      
+    
+  </body>
+</html>
