@@ -338,15 +338,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#en-portatiles" class="md-nav__link">
-    En portátiles
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#servidores-de-oficina" class="md-nav__link">
-    Servidores de oficina
+  <a href="#servidor-bastion" class="md-nav__link">
+    Servidor bastión
   </a>
   
 </li>
@@ -354,6 +347,20 @@
         <li class="md-nav__item">
   <a href="#servidores-cpd" class="md-nav__link">
     Servidores CPD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servidor-de-oficina" class="md-nav__link">
+    Servidor de oficina
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portatiles" class="md-nav__link">
+    Portátiles
   </a>
   
 </li>
@@ -471,15 +478,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#en-portatiles" class="md-nav__link">
-    En portátiles
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#servidores-de-oficina" class="md-nav__link">
-    Servidores de oficina
+  <a href="#servidor-bastion" class="md-nav__link">
+    Servidor bastión
   </a>
   
 </li>
@@ -487,6 +487,20 @@
         <li class="md-nav__item">
   <a href="#servidores-cpd" class="md-nav__link">
     Servidores CPD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servidor-de-oficina" class="md-nav__link">
+    Servidor de oficina
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portatiles" class="md-nav__link">
+    Portátiles
   </a>
   
 </li>
@@ -505,21 +519,27 @@
                 
                 
                 <h1 id="datos-a-proteger">Datos a proteger</h1>
-<h2 id="en-portatiles">En portátiles</h2>
+<h2 id="servidor-bastion">Servidor bastión</h2>
+<p>Reglas nftables, porque:</p>
 <ul>
-<li>Credenciales (SSH privada)</li>
-<li>Documentos privados (informes)</li>
-</ul>
-<h2 id="servidores-de-oficina">Servidores de oficina</h2>
-<ul>
-<li>Documentos privados (informes)</li>
+<li>Perderlas causaría que no hubiera conectividad de red</li>
+<li>Si son robadas, se podría averiguar la infraestructura de red</li>
 </ul>
 <h2 id="servidores-cpd">Servidores CPD</h2>
 <ul>
-<li>Credenciales (autenticaciones apache, correo)</li>
+<li>Volúmenes e imágenes en Openstack</li>
+<li>Definición de zonas y ficheros de zona en bind9</li>
+<li>Correos</li>
 <li>Bases de datos</li>
-<li>Correos de los clientes</li>
-<li>Openstack (volúmenes, imágenes)</li>
+<li>Configuraciones de Nginx</li>
+<li>Credenciales</li>
+</ul>
+<h2 id="servidor-de-oficina">Servidor de oficina</h2>
+<p>Documentos privados <em>(ejemplo: informes)</em>.</p>
+<h2 id="portatiles">Portátiles</h2>
+<ul>
+<li>Credenciales <em>(claves SSH privadas)</em></li>
+<li>Documentos privados</li>
 </ul>
                 
               
