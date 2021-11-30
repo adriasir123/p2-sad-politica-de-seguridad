@@ -262,32 +262,6 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2_2">
-          Activos
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Activos" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_2">
-          <span class="md-nav__icon md-icon"></span>
-          Activos
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
       <a href="../inventario-hardware/" class="md-nav__link">
         Inventario de Hardware
@@ -334,13 +308,6 @@
       <a href="../datos-proteger/" class="md-nav__link">
         Datos
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -505,18 +472,107 @@ MEDIO
 BAJO X
 NULA</p>
 <p>Impacto (coste)</p>
-<p>CRÍTICO - Sala del CPD directamente
-ALTO -
-MEDIO -
-BAJO -</p>
-<p>Interrupciones suministro eléctrico
-Averías en la Electrónica de Red
-Ransomware</p>
-<p>Robo de dispositivos móviles
-Phishing
-Compromiso de contraseñas
-Exploit de vulnerabilidades
-Ataques de denegación de servicio</p>
+<p>CRÍTICO - Sala del CPD directamente (robo de datos, instalación de software malicioso de propósito específico, destrozo material, robo de servidores)
+BAJO - Si alguien se queda en el área intermedia (anti-passback)</p>
+<p>Interrupciones suministro eléctrico</p>
+<p>Probabilidad de que pase (a lo largo del tiempo)</p>
+<p>SEGURA X
+ALTO
+MEDIO
+BAJO
+NULA</p>
+<p>Impacto (coste)</p>
+<p>CRÍTICO - Pico de tensión y sistemas de protección insuficientes
+ALTO  - Perder un porcentaje de los servidores
+MEDIO - No dar servicio durante un corto periodo de tiempo
+BAJO - Que haya apagón y se usen los SAIs/generadores</p>
+<p>Averías en la Electrónica</p>
+<p>Probabilidad de que pase (a lo largo del tiempo)</p>
+<p>SEGURA X
+ALTO
+MEDIO
+BAJO
+NULA</p>
+<p>Impacto (coste)</p>
+<p>CRÍTICO - Avería de CPU masivos
+ALTO  - Avería de routers/switches
+MEDIO - Averías de Fuentes de alimentación
+BAJO - Averías de Discos duros/memorias ram</p>
+<p>Ransomware</p>
+<p>Probabilidad de que pase (a lo largo del tiempo)</p>
+<p>SEGURA
+ALTO
+MEDIO X
+BAJO
+NULA</p>
+<p>Impacto (coste)</p>
+<p>CRÍTICO - Encripten todos los discos duros/copias de seguridad
+ALTO  - Encripte todo, pero puedas usar copias de seguridad
+BAJO - Encripten pocos datos y se puedan recuperar con backups rápidamente</p>
+<p>Robo de dispositivos (móvil/portátil)</p>
+<p>Probabilidad de que pase (a lo largo del tiempo)</p>
+<p>SEGURA
+ALTO
+MEDIO X
+BAJO
+NULA</p>
+<p>Impacto (coste)</p>
+<p>CRÍTICO - Conseguir credenciales de administradores, y robo de datos sensible
+MEDIO - Destrucción de dispositivo
+BAJO - Robo de dispositivo pero que se bloquee remotamente</p>
+<p>Phishing</p>
+<p>Probabilidad de que pase (a lo largo del tiempo)</p>
+<p>SEGURA
+ALTO
+MEDIO
+BAJO X
+NULA</p>
+<p>Impacto (coste)</p>
+<p>CRÍTICO - Conseguir credenciales de administradores, y robo de datos sensible
+ALTO - Ejecución de código/aplicaciones no deseado (puede ser que por política de permisos el ataque no llegue muy lejos)
+MEDIO - Conseguir credenciales de usuarios con permisos especiales
+BAJO - Que consigan unas credenciales con permisos mínimos / que fuesen a cambiar pronto</p>
+<p>Compromiso de contraseñas</p>
+<p>Probabilidad de que pase (a lo largo del tiempo)</p>
+<p>SEGURA
+ALTO
+MEDIO X
+BAJO
+NULA</p>
+<p>Impacto (coste)</p>
+<p>CRÍTICO - Conseguir credenciales de administradores, y robo de datos sensible
+ALTO - Ejecución de código/aplicaciones no deseado (puede ser que por política de permisos el ataque no llegue muy lejos)
+MEDIO - Conseguir credenciales de usuarios con permisos especiales
+BAJO - Que consigan unas credenciales con permisos mínimos / que fuesen a cambiar pronto</p>
+<p>Exploit de vulnerabilidades</p>
+<p>Probabilidad de que pase (a lo largo del tiempo)</p>
+<p>SEGURA
+ALTO X
+MEDIO
+BAJO
+NULA</p>
+<p>Impacto (coste)</p>
+<p>CRÍTICO - Conseguir control total del sistema
+ALTO - Robo de información sensible
+MEDIO - Conseguir acceso con un usuario normal (con pocos permisos)
+BAJO - explotar la vulnerabilidad de protocolos inseguros</p>
+<p>Ataques de denegación de servicio</p>
+<p>Probabilidad de que pase (a lo largo del tiempo)</p>
+<p>SEGURA X
+ALTO
+MEDIO
+BAJO
+NULA</p>
+<p>Impacto (coste)</p>
+<p>ALTO - Denegación de servicios imporantes
+MEDIO - Ralenticen servicios
+BAJO - Generen ruido</p>
+<p>Ex-empleados (Medida de protección: borrar todas sus cuentas y accesos que tuvieran)
+Tifones
+Discos duros mueren
+Terremotos
+Ataques terroristas
+Espionaje industrial</p>
                 
               
               

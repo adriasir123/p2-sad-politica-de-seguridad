@@ -260,32 +260,6 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2_2">
-          Activos
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Activos" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_2">
-          <span class="md-nav__icon md-icon"></span>
-          Activos
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
       <a href="../inventario-hardware/" class="md-nav__link">
         Inventario de Hardware
@@ -332,13 +306,6 @@
       <a href="../datos-proteger/" class="md-nav__link">
         Datos
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -463,16 +430,175 @@
                 
                 
                 <h1 id="plan-de-contingencia">Plan de contingencia</h1>
-<p>(soluciones, plan de respuesta)</p>
-<p>plan de respuesta a las contingencias, especificando que hacer cuando alguno de los riesgos estudiados se haga realidad.</p>
-<p>ESTRUCTURAR EN MODO DE PROBLEMA+SOLUCIÓN</p>
-<p>según daños</p>
+<p>Plan de respuesta a las contingencias, especificando que hacer cuando alguno de los riesgos estudiados se haga realidad.</p>
+<ul>
+<li>
 <p>Pérdida de datos (BD, configuraciones... )</p>
-<p>Todo lo que se pueda perder que haga que se pare el negocio</p>
+</li>
+<li>
+<p>-Mantendremos la calma, apagueremos el servidor que haya sufrido la pérdida de información.</p>
+</li>
+<li>
+<p>Cargaremos una copia de seguridad.</p>
+</li>
+<li>
+<p>Realizaremos las configuraciones necesarias  y volveremos a restablecer el servicio en el servidor dañado.</p>
+</li>
+<li>
 <p>Si se estropea el router principal</p>
+</li>
+<li>
+<p>Reiniciar el router</p>
+</li>
+<li>
+<p>Verificar los conectores</p>
+</li>
+<li>
+<p>Ver si es posible la reparación</p>
+</li>
+<li>
+<p>Cambiarlo y configurar otro</p>
+</li>
+<li>
+<p>Si fuera problema de suministro, contactar con la compañia telefonica.</p>
+</li>
+<li>
 <p>Rompen servidores</p>
-<p>Rompen discos duros (RAID 1 para que si se rompe alguno se cambie sin problema)</p>
-<p>Revisar el plan (cambios en hardware o software)</p>
+</li>
+<li>
+<p>Verificar que servidor esta dañado</p>
+</li>
+<li>
+<p>Aislar el componente que falla</p>
+</li>
+<li>
+<p>Comprobar si se la avería se puede solucionar y  si es posible solucionar, intentamos arreglar la averia.</p>
+</li>
+<li>
+<p>Si no es posible arreglar la avería, cambio del componente o conjunto de componentes averiados.</p>
+</li>
+<li>
+<p>Rompen discos duros:</p>
+</li>
+<li>
+<p>Detección y cambio de disco duro afectado.</p>
+</li>
+<li>
+<p>Una vez se active el raid, poner el disco duro como recambio.</p>
+</li>
+<li>
+<p>Revisar el plan (cambios en hardware o software)
+PREGUNTAR</p>
+</li>
+<li>
+<p>Accesos no autorizados al CPD *</p>
+</li>
+<li>
+<p>Intentar mantener la calma</p>
+</li>
+<li>
+<p>No hacer imprudencias</p>
+</li>
+<li>
+<p>Asegurarnos de que la persona que accedió no puede salir</p>
+</li>
+<li>
+<p>Llamar a las autoridades para que la detengan.</p>
+</li>
+<li>
+<p>Interrupciones suministro eléctrico</p>
+</li>
+<li>
+<p>Asegurarnos del correcto funcionamiento de los SAI </p>
+</li>
+<li>
+<p>Si asado un tiempo prudencial seguimos sin suministro, avisaremos a los clientes de cese del servicio por interrupción de suministro eléctrico y procederemos a apagar los servidores de manera correcta para evitar corrupción datos.</p>
+</li>
+<li>
+<p>Averías en la Electrónica </p>
+</li>
+<li>
+<p>Verificar que componente esta dañado</p>
+</li>
+<li>
+<p>Aislar el componente que falla</p>
+</li>
+<li>
+<p>Comprobar si se la avería se puede solucionar y  si es posible solucionar, intentamos arreglar la averia.</p>
+</li>
+<li>
+<p>Si no es posible arreglar la avería, cambio del componente o conjunto de componentes averiados.</p>
+</li>
+<li>
+<p>Ataque de Ransomware</p>
+</li>
+<li>
+<p>Restaurar los archivos afectados a partir de copias de seguridad limpias. Cuando recibamos un ataque de ransomware, hemos de asegurarnos de restaurar únicamente las copias de seguridad que sepamos que están limpias y estables. </p>
+</li>
+<li>
+<p>Utilizar un firewall y software antivirus de buena reputación. La mejor defensa ante un ataque de randsomware es tener un firewall y software de AV que nos darán múltiples capas de defensa para ayudar a detener o desacelerar el camino del virus.</p>
+</li>
+<li>
+<p>Utilizar un escaner de vulnerabilidades para comprobar si queda rastro de algun fichero malicioso.</p>
+</li>
+<li>
+<p>Utilizar el escaneo/filtrado de contenido en los servidores de correo. Utilizando esta herramienta evitamos que el ransomware acceda a nuestros dispositivos por una de las principales rutas de infección.</p>
+</li>
+<li>
+<p>Actualizar y parchear los sistemas y software. </p>
+</li>
+<li>
+<p>Robo de dispositivos móviles</p>
+</li>
+<li>
+<p>Poner en marcha los mecanismos antirrobo de la aplicación de seguridad. Con estas 'apps' es posible desde hacer sonar una alarma en el dispositivo hasta geolocalizarlo e incluso, en última instancia, borrar en remoto el contenido almacenado.</p>
+</li>
+<li>
+<p>Contactar a la compañia móvil para que mediante el número IMEI bloqueen el dispositivo.</p>
+</li>
+<li>
+<p>Denunciar a la policia el robo</p>
+</li>
+<li>
+<p>Phishing</p>
+</li>
+<li>
+<p>Generar nuevas creedenciales para todos los usuarios.</p>
+</li>
+<li>
+<p>Comprobar la integridad de los archivos que han podido ser supcetible de modificaciones o alteraciones.</p>
+</li>
+<li>
+<p>Contratar empresa de ciberseguridad que nos haga un auditoria.</p>
+</li>
+<li>
+<p>Exploit de vulnerabilidades</p>
+</li>
+<li>
+<p>Revisar aplicaciones, cortafuegos, puntos de frontera, etc..</p>
+</li>
+<li>
+<p>Contratar empresa de ciberseguridad que nos haga un auditoria.</p>
+</li>
+<li>
+<p>Ataques de denegación de servicio</p>
+</li>
+<li>
+<p>Bloquearemos IPs</p>
+</li>
+<li>
+<p>Aumentar ancho de banda para que no tumben el servicio</p>
+</li>
+<li>
+<p>Contratar empresa de ciberseguridad que nos haga un auditoria.</p>
+</li>
+<li>
+<p>Tifones, terremotos y otros desastres naturales.</p>
+</li>
+<li>
+<p>Tener contratada una replica de nuestro cpd en un servicio como amazon web service o otra empresa dedicada a los cpd.</p>
+</li>
+</ul>
                 
               
               
